@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #00315281;
+    height: 100vh;
 }
 
 .topNavBar{
@@ -58,4 +59,34 @@ button:hover, .currentButton{
 .content{
     width: 80vw;
     height: 92vh;
+}
+
+.flags{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.flags img{
+    width: 3rem;
+    opacity: 0.2;
+}
+
+.flags img:hover{
+    cursor: pointer;
+}
+
+.flags img:last-child{
+    margin-left: 1rem;
+}
+
+footer{
+    height: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: white;
 }

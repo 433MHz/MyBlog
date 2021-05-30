@@ -4,10 +4,15 @@
       <h2>{{BarPageName}}</h2>
       <ul>
         <li><button (click) = "changePageNumber(1)" [ngClass]="currentPage === 1 ? 'currentButton' : ''">About Me</button></li>
-        <li><button (click) = "changePageNumber(2)" [ngClass]="currentPage === 2 ? 'currentButton' : ''">My Projects</button></li>
+        <li><button (click) = "changePageNumber(2)" [ngClass]="currentPage === 2 ? 'currentButton' : ''">Practical Experience</button></li>
         <li><button (click) = "changePageNumber(3)" [ngClass]="currentPage === 3 ? 'currentButton' : ''">Technologies I Know</button></li>
         <li><button (click) = "changePageNumber(4)" [ngClass]="currentPage === 4 ? 'currentButton' : ''">Contact Me</button></li>
       </ul>
+
+      <div class="flags">
+        <img src="../assets/images/united-kingdom.png">
+        <img src="../assets/images/poland.png">
+      </div>
     </div>
   </div>
 
@@ -17,4 +22,6 @@
     <app-what-ican *ngIf="currentPage === 3"></app-what-ican>
     <app-contact-me *ngIf="currentPage === 4"></app-contact-me>
   </div>
+
+  <footer>&copy; All Rights Reserved | Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com </a></footer>
 </div>

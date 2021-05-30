@@ -11,13 +11,6 @@ export class AppComponent {
 
   currentPage: number = 1;
 
-   buttonState:{
-    first: 'false',
-    second: false,
-    third: false,
-    fourth: false;
-  }
-
   changePageNumber(numberToChange){
     this.currentPage = numberToChange;
   }
