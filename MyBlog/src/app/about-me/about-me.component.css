@@ -1,0 +1,28 @@
+.container{
+    color: white;
+    font-size: 1.3rem;
+    margin: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+a{
+    color: #F4A201;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #AA7100;
+}
+
+.aboutMe-top{
+  
+}
