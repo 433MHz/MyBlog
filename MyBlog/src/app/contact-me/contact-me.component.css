@@ -1,0 +1,40 @@
+h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+a{
+    color: #F4A201;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #AA7100;
+}
+
+li{
+    font-size: 2rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+
+.container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

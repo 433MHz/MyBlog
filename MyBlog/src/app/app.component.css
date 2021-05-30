@@ -39,7 +39,7 @@
     justify-content: center;
 }
 
-.topNavBar div ul li button{
+button{
     height: 5vh;
     width: 10vw;
     font-size: 2vh;
@@ -48,7 +48,7 @@
     color: white;
 }
 
-.topNavBar div ul li button:hover{
+button:hover, .currentButton{
     border-bottom: .3vh #f8f8f8 solid;
     border-top: .3vh #f8f8f8 solid;
     color: #f8f8f8;

@@ -3,15 +3,18 @@
     <div>
       <h2>{{BarPageName}}</h2>
       <ul>
-        <li><button>About Me</button></li>
-        <li><button>My Projects</button></li>
-        <li><button>What I Can</button></li>
-        <li><button>Contact Me</button></li>
+        <li><button (click) = "changePageNumber(1)" [ngClass]="currentPage === 1 ? 'currentButton' : ''">About Me</button></li>
+        <li><button (click) = "changePageNumber(2)" [ngClass]="currentPage === 2 ? 'currentButton' : ''">My Projects</button></li>
+        <li><button (click) = "changePageNumber(3)" [ngClass]="currentPage === 3 ? 'currentButton' : ''">Technologies I Know</button></li>
+        <li><button (click) = "changePageNumber(4)" [ngClass]="currentPage === 4 ? 'currentButton' : ''">Contact Me</button></li>
       </ul>
     </div>
   </div>
 
   <div class="content">
-    <app-about-me></app-about-me>
+    <app-about-me *ngIf="currentPage === 1"></app-about-me>
+    <app-my-projects *ngIf="currentPage === 2"></app-my-projects>
+    <app-what-ican *ngIf="currentPage === 3"></app-what-ican>
+    <app-contact-me *ngIf="currentPage === 4"></app-contact-me>
   </div>
 </div>
