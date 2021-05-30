@@ -1,17 +1,17 @@
 <div id="mainContainer">
   <div class="topNavBar">
     <div>
-      <h2>{{BarPageName}}</h2>
+      <h2 (click) = "changePageNumber(1)">{{BarPageName}}</h2>
       <ul>
-        <li><button (click) = "changePageNumber(1)" [ngClass]="currentPage === 1 ? 'currentButton' : ''">About Me</button></li>
-        <li><button (click) = "changePageNumber(2)" [ngClass]="currentPage === 2 ? 'currentButton' : ''">Practical Experience</button></li>
-        <li><button (click) = "changePageNumber(3)" [ngClass]="currentPage === 3 ? 'currentButton' : ''">Technologies I Know</button></li>
-        <li><button (click) = "changePageNumber(4)" [ngClass]="currentPage === 4 ? 'currentButton' : ''">Contact Me</button></li>
+        <li><button (click) = "changePageNumber(1)" [ngClass]="getCurrentPageForButton() === 1 ? 'currentButton' : ''">{{aboutMeButton}}</button></li>
+        <li><button (click) = "changePageNumber(2)" [ngClass]="getCurrentPageForButton() === 2 ? 'currentButton' : ''">{{practicalExperienceButton}}</button></li>
+        <li><button (click) = "changePageNumber(3)" [ngClass]="getCurrentPageForButton() === 3 ? 'currentButton' : ''">{{whatICanButton}}</button></li>
+        <li><button (click) = "changePageNumber(4)" [ngClass]="getCurrentPageForButton() === 4 ? 'currentButton' : ''">{{contactMeButton}}</button></li>
       </ul>
 
       <div class="flags">
-        <img src="../assets/images/united-kingdom.png">
-        <img src="../assets/images/poland.png">
+        <img src="../assets/images/united-kingdom.png" [ngClass]="englishLanguage ? 'currentFlag' : ''" (click) = "changeToEnglish()">
+        <img src="../assets/images/poland.png" [ngClass]="!englishLanguage ? 'currentFlag' : ''" (click) = "changeToPolish()">
       </div>
     </div>
   </div>
@@ -21,7 +21,11 @@
     <app-my-projects *ngIf="currentPage === 2"></app-my-projects>
     <app-what-ican *ngIf="currentPage === 3"></app-what-ican>
     <app-contact-me *ngIf="currentPage === 4"></app-contact-me>
+    <app-about-me-pl *ngIf="currentPage === 5"></app-about-me-pl>
+    <app-my-projects-pl *ngIf="currentPage === 6"></app-my-projects-pl>
+    <app-what-i-can-pl *ngIf="currentPage === 7"></app-what-i-can-pl>
+    <app-contact-me-pl *ngIf="currentPage === 8"></app-contact-me-pl>
   </div>
 
-  <footer>&copy; All Rights Reserved | Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com </a></footer>
+  <footer>&copy; All Rights Reserved. I<div>cons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
 </div>

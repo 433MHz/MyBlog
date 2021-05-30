@@ -24,7 +24,10 @@
 
 .topNavBar div h2{
     font-size: 4vh;
+}
 
+.topNavBar div h2:hover{
+    cursor: pointer;
 }
 
 .topNavBar div ul{
@@ -73,10 +76,15 @@ button:hover, .currentButton{
 
 .flags img:hover{
     cursor: pointer;
+    opacity: 1;
 }
 
 .flags img:last-child{
     margin-left: 1rem;
+}
+
+.currentFlag{
+    opacity: 1 !important;
 }
 
 footer{
