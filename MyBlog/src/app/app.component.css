@@ -1,0 +1,49 @@
+.topNavBar{
+    background-color: #064ddb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+.topNavBar div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.topNavBar div h2{
+    font-size: 2rem;
+
+}
+
+.topNavBar div ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNavBar div ul li{
+    margin: 0 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.topNavBar div ul li button{
+    height: 5vh;
+    width: 10vw;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.topNavBar div ul li button:hover{
+    border-bottom: 2px #f8f8f8 solid;
+    border-top: 2px #f8f8f8 solid;
+    color: #f8f8f8;
+    cursor: pointer;
+}
