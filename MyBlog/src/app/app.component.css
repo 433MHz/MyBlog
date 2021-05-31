@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70vw;
+    width: 80vw;
 }
 
 .topNavBar div h2{
@@ -43,8 +43,12 @@
     justify-content: center;
 }
 
+.topNavBar div ul li:first-child{
+    margin-left: 5vw;
+}
+
 button{
-    height: 5vh;
+    height: 6vh;
     width: 10vw;
     font-size: 2vh;
     background: none;

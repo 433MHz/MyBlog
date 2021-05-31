@@ -11,6 +11,8 @@ import { AboutMePlComponent } from './about-me-pl/about-me-pl.component';
 import { ContactMePlComponent } from './contact-me-pl/contact-me-pl.component';
 import { MyProjectsPlComponent } from './my-projects-pl/my-projects-pl.component';
 import { WhatICanPlComponent } from './what-i-can-pl/what-i-can-pl.component';
+import { TechnologyBoxesComponent } from './technology-boxes/technology-boxes.component';
+import { TechnologyDetailsComponent } from './technology-boxes/technology-details/technology-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { WhatICanPlComponent } from './what-i-can-pl/what-i-can-pl.component';
     AboutMePlComponent,
     ContactMePlComponent,
     MyProjectsPlComponent,
-    WhatICanPlComponent
+    WhatICanPlComponent,
+    TechnologyBoxesComponent,
+    TechnologyDetailsComponent
   ],
   imports: [
     BrowserModule,

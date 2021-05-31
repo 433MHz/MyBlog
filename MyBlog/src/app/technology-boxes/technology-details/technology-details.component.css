@@ -1,0 +1,22 @@
+.container{
+    margin: auto;
+    font-size: 1.3rem;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+li{
+    border: 1px solid orange;
+    border-radius: 1rem;
+    list-style: none;
+    width: 10vw;
+    height: 5vh;
+}
